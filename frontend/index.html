@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EPN FIS Students</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>ESTUDIANTES EPN FIS</h1>
+  <div class="search-container">
+    <h2>Buscar por ID (Manual)</h2>
+    <input type="text" id="searchIdEstudiante" placeholder="ID Estudiante">
+    <button onclick="searchStudent()">Buscar</button>
+  </div>
+  <div>
+    <h2>CREAR O ACTUALIZAR ESTUDIANTE</h2>
+    <input type="text" id="idEstudiante" placeholder="ID Estudiante">
+    <input type="text" id="name" placeholder="Nombre">
+    <input type="number" id="age" placeholder="Edad">
+    <input type="text" id="grade" placeholder="Nota">
+    <button onclick="createOrUpdateStudent()">GUARDAR</button>
+  </div>
+  
+  <div>
+    <h2>ESTUDIANTES REGISTRADOS</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID (Firebase)</th>
+          <th>ID (Manual)</th>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Nota</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody id="studentsTableBody">
+        <!-- Table rows will be added dynamically using JavaScript -->
+      </tbody>
+    </table>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
